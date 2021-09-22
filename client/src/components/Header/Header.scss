@@ -1,0 +1,130 @@
+.header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    .vixod{
+        width: 42px;
+        height: 20px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: capitalize;
+        color: #4F4F4F;
+        background-color: white;
+        border: transparent;
+        cursor: pointer;
+        margin-right: 10vh;
+        list-style: none;
+        text-decoration: none;
+    }
+    .logo{
+        cursor: pointer;
+        margin-left: 10vh;
+    }
+    .headermenu{
+        width:20%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            width:100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    }
+
+}
+.serchbar{
+    width: 378.17px;
+    height: 40px;
+    background: #E8EAEB;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    button{
+        width: 32px;
+        height: 32px;
+        background-color: #C10016;
+        border-radius: 50%;
+        border: inherit;
+        background-image: url('../../image/serch.png');
+        background-position: center;
+        cursor: pointer;
+        background-repeat: no-repeat;
+    }
+    input{
+        width: 90%;
+        height: 100%;
+        border: white;
+        border-style:none;
+        background-color: inherit;
+        border-radius: 25px;
+        padding: 8px 15px;
+        outline: none;
+       
+    }
+
+  
+}
+.username{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #4F4F4F;
+    cursor: pointer;
+    margin-right: 10vh;
+  
+}
+.admin{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.modalExit{
+position: absolute;
+width: 206px;
+height: 126px;
+background: #FFFFFF;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+z-index: 16;
+top:60px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+h1{
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 20px;
+text-transform: capitalize;
+color: #1F1617;
+cursor: pointer;
+}
+hr{
+    width: 195px;
+    border: 1px solid #B3B3B4; 
+}
+p{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+text-transform: capitalize;
+color: #000000;
+cursor: pointer;
+}
+}
