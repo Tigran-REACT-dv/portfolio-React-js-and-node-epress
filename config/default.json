@@ -1,0 +1,5 @@
+{
+    "mongoURL": "mongodb+srv://loginreg:123321@cluster0.x7lbc.mongodb.net/myFirstDatabase",
+    "SecretKey":"Secret"
+    
+}
