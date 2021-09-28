@@ -1,0 +1,240 @@
+@mixin modalstyles {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .contElement{
+        width: 90%;
+        min-height:20vh;
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-evenly;
+        
+        .product{
+            width: 15%;
+            min-height: 70px;
+            background: #FFFFFF;
+            border-radius: 5px;
+            margin: 20px 10px 20px 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 11px 0 0 0;
+            cursor: pointer;
+            img{
+                width: 90%;
+                height: 150px;
+               
+
+            }
+            .info{
+                width: 100%;
+                height: 60px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                position: relative;
+            }
+        }
+    }
+}
+.filtermodal{
+    position: absolute;
+    top: 280px;
+    width: 50px;
+    height: 174px;
+    left: 0px;
+    top: 311px;
+    background: #C10016;
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: fixed;
+    p{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: capitalize;
+         color: #FFFFFF;
+    }
+}
+.filtermodalwrapper{
+    @include modalstyles();
+    background: rgba(49,49,49,0.8);
+    z-index: 15;
+    .filter{
+        position: absolute;
+        width: 320px;
+        top: 250px;
+        z-index: 25;
+        height: 250px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 0px 5px 5px 0px; 
+        .closemod{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: flex-end;
+            cursor: pointer;
+            
+            .closebtn{
+               display: flex;
+               align-items: center;
+               width: 11px;
+               height: 49px;
+               border-radius: 0px 5px;
+               background: #C10016;
+                box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+                font-family: Montserrat;
+                 color: #FFFFFF;
+            }
+        }
+        .filterinput{
+            width: 100%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h4{
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 15px;
+                text-transform: capitalize;
+                color: #2E2E2E;
+                text-align: center;  
+            }
+            button{
+            width: 90%;
+            height: 32px;
+            background: #C10016;
+            border-radius: 25px;
+            border: none;
+            margin-top: 10px;
+            cursor: pointer;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            }
+        }
+    }
+}
+.wrraper{
+    @include modalstyles()
+   
+}
+
+
+.itmModalwraper{
+    @include modalstyles();
+    background: rgba(49,49,49,0.8);
+    z-index: 15;
+}
+.contentmodal{
+position: absolute;
+width: 50%;
+min-height:30vh;
+left: 27%;
+top: 170px;
+background: #FFFFFF;
+border-radius: 5px;
+z-index: 25;
+.verxnayachast{
+    width: 98%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    pad: 5px 10px;
+    img{
+        cursor: pointer;
+    }
+}
+}
+.content{
+    width: 99%;
+    min-height:200px;
+    display: flex;
+    justify-content: space-evenly;
+    img{
+        width: 46%;
+        height: 200px;
+    }
+    .leftinfo{
+        width: 50%;
+        min-height: 200px;
+        background: #F0F0F0;
+        div{
+            width: 95%;
+            height: 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5px ;
+            border-bottom: 1px solid #C1C1C1; ;
+        }
+    }
+}
+.dop{
+    width: 5px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    div{
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #b5b5cc;
+    }
+}
+.deletemod{
+position: absolute;
+width: 60px;
+height: 32px;
+left: 160px;
+background: #FFFFFF;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+border-radius: 2px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+ .dilet{
+    width: 16px;
+    height: 18px;
+    background-image: url("../../image/del.png");
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+ .rename{
+    width: 16px;
+    height: 18px;
+    background-image: url("../../image/rename.png");
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+}
